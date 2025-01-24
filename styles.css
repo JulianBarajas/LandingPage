@@ -439,22 +439,22 @@ header .logo img {
 }
 
 /* Estilo general de la sección FAQ */
-/* .faq-section {
-  /* background-color: #f5f5dc; /* Fondo beige
+.faq-section {
+  background-color: #f5f5dc;
   padding: 50px 20px;
 }
 
 .faq-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #964b00; /* Marrón claro
+  color: #964b00;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .faq-item {
   margin-bottom: 20px;
-  border-bottom: 1px solid #dcdcdc; /* Línea divisoria 
+  border-bottom: 1px solid #dcdcdc;
   padding-bottom: 10px;
 }
 
@@ -463,7 +463,7 @@ header .logo img {
   border: none;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #964b00; /* Marrón claro 
+  color: #964b00;
   text-align: left;
   width: 100%;
   cursor: pointer;
@@ -474,7 +474,7 @@ header .logo img {
 }
 
 .faq-question:hover {
-  color: #ffa07a; /* Naranja suave 
+  color: #ffa07a;
 }
 
 .faq-icon {
@@ -483,17 +483,17 @@ header .logo img {
 }
 
 .faq-answer {
-  display: none; /* Oculta inicialmente 
+  display: none;
   padding: 10px 0;
   font-size: 1rem;
-  color: #333; /* Texto oscuro 
+  color: #333;
   line-height: 1.6;
 }
 
-/* Transición suave para mostrar/ocultar respuestas 
+/* Transición suave para mostrar/ocultar respuestas  */
 .faq-answer.open {
-  display: block; /* Muestra la respuesta 
-} */
+  display: block;
+}
 
 /* Ícono dentro del botón */
 .btn-flotante i {
