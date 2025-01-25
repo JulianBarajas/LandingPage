@@ -26,9 +26,9 @@ section {
 
 /* Hero Section */
 .hero {
-  background: url("Hero.png") no-repeat center center;
+  background: url("Terraza.png") no-repeat center center;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,8 +92,8 @@ section {
 
 /* ----------------------------------------------------------------------------------------- */
 
-/* .benefits-section {
-  background-color: #f5f5dc; /* Beige 
+.benefits-section {
+  background-color: #f5f5dc;
   padding: 50px 20px;
   text-align: center;
 }
@@ -121,12 +121,12 @@ section {
 
 .benefit i {
   font-size: 2rem;
-  color: #ffa07a; /* Naranja suave 
+  color: #ffa07a;
   margin-bottom: 10px;
 }
 
 .benefit h3 {
-  color: #964b00; /* Marrón claro
+  color: #964b00;
   margin-bottom: 10px;
 }
 
