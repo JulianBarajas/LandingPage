@@ -216,7 +216,6 @@ header .logo img {
 }
 
 .about-section {
-  background-color: #f5f5dc; /* Fondo beige */
   padding: 50px 20px; /* Espaciado alrededor */
   text-align: center; /* Centrar contenido */
 }
@@ -239,8 +238,15 @@ header .logo img {
 /* Galería */
 /* Galería */
 .gallery-section {
+  background-color: #f5f5dc;
   text-align: center;
   padding: 20px 10px;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  color: #964b00;
+  font-weight: bold;
 }
 
 .gallery {
@@ -409,7 +415,6 @@ header .logo img {
 }
 
 #reseñas {
-  background-color: #f5f5dc; /* Azul claro */
   color: #333;
 }
 

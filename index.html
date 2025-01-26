@@ -50,10 +50,10 @@
           </button>
           <!-- Enlaces de navegación -->
           <ul class="nav-links" id="nav-links">
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#galeria">Galería</a></li>
             <li><a href="#acerca">Resumen</a></li>
+            <li><a href="#galeria">Galería</a></li>
             <li><a href="#amenities-services">Servicios</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#reseñas">Reseñas</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -101,47 +101,22 @@
       </div>
     </section>
 
-    <section id="ubicacion" class="ubicacion-section">
+    <section id="acerca" class="about-section">
       <div class="container">
-        <h2>Ubicación</h2>
-        <div class="ubicacion-contenido">
-          <!-- Columna izquierda -->
-          <div class="ubicacion-lugares">
-            <h3>Lugares cercanos:</h3>
-            <ul>
-              <li>
-                <strong>Centro Comercial Zazué:</strong> 10 minutos en carro.
-              </li>
-              <li>
-                <strong>Playa Bello Horizonte:</strong> A solo 5 minutos
-                caminando.
-              </li>
-              <li>
-                <strong>Playa El Rodadero:</strong> A 2 cuadras del apartamento.
-              </li>
-              <li><strong>Parque Tayrona:</strong> A 30 minutos en auto.</li>
-            </ul>
-          </div>
-          <!-- Columna derecha -->
-          <div class="col-12 col-md-6 ubicacion-mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.585663890611!2d-74.2283720259067!3d11.203352151175837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef45f17d45e07f7%3A0x128010390f852520!2sEdificio%20Vita%20945%20Apartasuites!5e1!3m2!1ses!2sco!4v1737480239137!5m2!1ses!2sco"
-              width="100%"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
+        <h2>Acerca del Apartamento</h2>
+        <p>
+          Bienvenidos a <strong>Apartasuite VITA 945</strong>, ubicado en el
+          corazón del Rodadero, Santa Marta. Disfruta de un alojamiento moderno,
+          acogedor y equipado para garantizar una estadía inolvidable. A pocos
+          pasos de la playa, restaurantes y sitios de interés, es el lugar ideal
+          para tus vacaciones o viajes de trabajo.
+        </p>
       </div>
     </section>
 
     <section id="galeria" class="gallery-section">
       <div class="container">
-        <h2 class="section-title" style="text-align: center; color: #964b00">
-          Galería del Apartamento
-        </h2>
+        <h2 class="section-title">Galería del Apartamento</h2>
         <div class="gallery">
           <a data-fancybox="gallery" href="habitación.png">
             <img
@@ -171,7 +146,6 @@
         </div>
       </div>
     </section>
-
     <script>
       Fancybox.bind("[data-fancybox='gallery']", {
         Toolbar: {
@@ -183,19 +157,6 @@
         animationEffect: "zoom", // Efecto al abrir/cerrar
       });
     </script>
-
-    <section id="acerca" class="about-section">
-      <div class="container">
-        <h2>Acerca del Apartamento</h2>
-        <p>
-          Bienvenidos a <strong>Apartasuite VITA 945</strong>, ubicado en el
-          corazón del Rodadero, Santa Marta. Disfruta de un alojamiento moderno,
-          acogedor y equipado para garantizar una estadía inolvidable. A pocos
-          pasos de la playa, restaurantes y sitios de interés, es el lugar ideal
-          para tus vacaciones o viajes de trabajo.
-        </p>
-      </div>
-    </section>
 
     <section id="amenities-services" class="py-5">
       <div class="container">
@@ -290,6 +251,42 @@
                 Cerrar
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="ubicacion-section">
+      <div class="container">
+        <h2>Ubicación</h2>
+        <div class="ubicacion-contenido">
+          <!-- Columna izquierda -->
+          <div class="ubicacion-lugares">
+            <h3>Lugares cercanos:</h3>
+            <ul>
+              <li>
+                <strong>Centro Comercial Zazué:</strong> 10 minutos en carro.
+              </li>
+              <li>
+                <strong>Playa Bello Horizonte:</strong> A solo 5 minutos
+                caminando.
+              </li>
+              <li>
+                <strong>Playa El Rodadero:</strong> A 2 cuadras del apartamento.
+              </li>
+              <li><strong>Parque Tayrona:</strong> A 30 minutos en auto.</li>
+            </ul>
+          </div>
+          <!-- Columna derecha -->
+          <div class="col-12 col-md-6 ubicacion-mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.585663890611!2d-74.2283720259067!3d11.203352151175837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef45f17d45e07f7%3A0x128010390f852520!2sEdificio%20Vita%20945%20Apartasuites!5e1!3m2!1ses!2sco!4v1737480239137!5m2!1ses!2sco"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
