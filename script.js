@@ -69,3 +69,34 @@ faqQuestions.forEach((question) => {
 // });
 
 // ------------------------------------------------------------------------------- //
+
+// Seleccionar elementos
+const btnAnfitrion = document.getElementById("btn-anfitrion");
+const modalAnfitrion = document.getElementById("modal-anfitrion");
+const closeModal = document.querySelector(".close");
+
+// Abrir el modal
+btnAnfitrion.addEventListener("click", () => {
+  modalAnfitrion.style.display = "block";
+});
+
+// Cerrar el modal cuando se haga clic en la "X"
+closeModal.addEventListener("click", () => {
+  modalAnfitrion.style.display = "none";
+});
+
+// Cerrar el modal cuando se haga clic fuera de la ventana
+window.addEventListener("click", (event) => {
+  if (event.target === modalAnfitrion) {
+    modalAnfitrion.style.display = "none";
+  }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
