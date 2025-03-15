@@ -1,23 +1,37 @@
-const hamburgerMenu = document.getElementById("hamburger-menu");
+const hamburger = document.getElementById("hamburger-menu");
 const navLinks = document.getElementById("nav-links");
+const overlay = document.getElementById("overlay");
+const navItems = document.querySelectorAll(".nav-item");
 
-// Abrir/Cerrar el menú al hacer clic en el ícono del menú hamburguesa
-hamburgerMenu.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+function openMenu() {
+  navLinks.classList.add("open");
+  overlay.classList.add("open");
+  hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+}
 
-// Cerrar el menú al hacer clic en un enlace
-navLinks.addEventListener("click", (e) => {
-  if (e.target.tagName === "A") {
-    navLinks.classList.remove("active");
+function closeMenu() {
+  navLinks.classList.remove("open");
+  overlay.classList.remove("open");
+  hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+}
+
+function toggleMenu() {
+  if (navLinks.classList.contains("open")) {
+    closeMenu();
+  } else {
+    openMenu();
   }
-});
+}
 
-// Cerrar el menú al hacer clic fuera del menú
-document.addEventListener("click", (e) => {
-  if (!navLinks.contains(e.target) && !hamburgerMenu.contains(e.target)) {
-    navLinks.classList.remove("active");
-  }
+hamburger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", closeMenu);
+
+navItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    navItems.forEach((link) => link.classList.remove("active"));
+    this.classList.add("active");
+    closeMenu();
+  });
 });
 
 // Script de interaccion FAQ
@@ -100,3 +114,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+// Detener el video cuando se cierra el modal
+document
+  .getElementById("videoModal")
+  .addEventListener("hidden.bs.modal", function () {
+    let video = document.getElementById("videoFrame");
+    video.pause();
+    video.currentTime = 0;
+  });
