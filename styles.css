@@ -94,7 +94,7 @@ ol {
 }
 
 .hero {
-  background: url("img/Terraza.png") no-repeat center center;
+  background: url("img/Terraza.webp") no-repeat center center;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -670,7 +670,13 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 20px;
+}
 @media (max-width: 1024px) {
   .navbar {
     padding: 10px 20px;

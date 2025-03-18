@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.innerHTML = `
         <div class="text-center">
           <img src="${testimonio.imagen}" class="reseña-imagen" alt="${testimonio.nombre}" width="80" loading="lazy" />
-          <h5>${testimonio.nombre}</h5>
+          <h3>${testimonio.nombre}</h3>
           <p class="text-muted">"${testimonio.texto}"</p>
         </div>
       `;

@@ -317,6 +317,7 @@
                   type="button"
                   data-bs-target="#reviewCarousel"
                   data-bs-slide="prev"
+                  aria-label="Botón de ir atras o anterior"
                 >
                   <span class="carousel-control-prev-icon"></span>
                   <span class="visually-hidden">Anterior</span>
@@ -326,6 +327,7 @@
                   type="button"
                   data-bs-target="#reviewCarousel"
                   data-bs-slide="next"
+                  aria-label="Botón de ir adelante o siguiente"
                 >
                   <span class="carousel-control-next-icon"></span>
                   <span class="visually-hidden">Siguiente</span>
@@ -424,9 +426,10 @@
           <span class="close">&times;</span>
           <h2>Información del Anfitrión</h2>
           <img
-            src="FotoPerfil.jpg"
+            src="img/FotoPerfil.jpg"
             alt="Foto del anfitrión"
             class="anfitrion-foto"
+            loading="lazy"
           />
           <p>Nombre: Jairo</p>
           <p>Teléfono: +57 300 123 4567</p>
@@ -449,7 +452,7 @@
       defer
     ></script>
     <script src="script.js" defer></script>
-    <script src="testimonios.js"></script>
+    <script src="testimonios.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   </body>
 </html>
