@@ -24,18 +24,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"
-      defer
-    ></script>
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <div class="navbar">
         <a href="index.html" class="logo">
-          <img src="logo.png" alt="Apartasuite VITA 945" loading="lazy" />
+          <img src="img/logo.png" alt="Apartasuite VITA 945" loading="lazy" />
         </a>
         <button
           class="hamburger-menu"
@@ -114,57 +109,63 @@
         <div class="container">
           <h2 class="section-title">Galería del Apartamento</h2>
           <div class="gallery">
-            <a data-fancybox="gallery" href="habitación.png">
+            <a
+              data-fancybox="gallery"
+              data-caption="Habitacion principal"
+              href="img/habitacion.png"
+            >
               <img
-                src="habitación.png"
+                src="img/habitacion.png"
                 alt="habitación principal"
                 loading="lazy"
               />
             </a>
-            <a data-fancybox="gallery" href="Cocina.png">
-              <img src="Cocina.png" alt="Cocina equipada" loading="lazy" />
+            <a
+              data-fancybox="gallery"
+              data-caption="Cocina Equipada"
+              href="img/Cocina.png"
+            >
+              <img src="img/Cocina.png" alt="Cocina equipada" loading="lazy" />
             </a>
-            <a data-fancybox="gallery" href="Baño.png">
-              <img src="Baño.png" alt="Baño" loading="lazy" />
+            <a data-fancybox="gallery" data-caption="Baño" href="img/Baño.png">
+              <img src="img/Baño.png" alt="Baño" loading="lazy" />
             </a>
-            <a data-fancybox="gallery" href="sala2.png">
-              <img src="sala2.png" alt="Sala" loading="lazy" />
-            </a>
-            <a data-fancybox="gallery" href="Jacuzzi.png">
-              <img src="Jacuzzi.png" alt="Zona social" loading="lazy" />
-            </a>
-            <a data-fancybox="gallery" href="Piscina.png">
-              <img src="Piscina.png" alt="Sala" loading="lazy" />
-            </a>
-            <a data-fancybox="gallery" href="Balcón.png">
-              <img src="Balcón.png" alt="Zona social" loading="lazy" />
+            <a data-fancybox="gallery" data-caption="Sala" href="img/sala2.png">
+              <img src="img/sala2.png" alt="Sala" loading="lazy" />
             </a>
             <a
-              href="VideoPublicitario.mp4"
               data-fancybox="gallery"
+              data-caption="Zona Social"
+              href="img/Jacuzzi.png"
+            >
+              <img src="img/Jacuzzi.png" alt="Jacuzzi" loading="lazy" />
+            </a>
+            <a
+              data-fancybox="gallery"
+              data-caption="Piscina"
+              href="img/Piscina.png"
+            >
+              <img src="img/Piscina.png" alt="Piscina" loading="lazy" />
+            </a>
+            <a
+              data-fancybox="gallery"
+              data-caption="Balcón"
+              href="img/Balcon.png"
+            >
+              <img src="img/Balcon.png" alt="Balcón" loading="lazy" />
+            </a>
+            <a
+              href="video/VideoPublicitario.mp4"
+              data-fancybox="gallery"
+              data-caption="Video del apartamento"
               data-type="video"
               loading="lazy"
             >
-              <img src="miniatura_video.jpg" alt="Video" loading="lazy" />
+              <img src="img/Piscina.png" alt="Video" loading="lazy" />
             </a>
           </div>
         </div>
       </section>
-      <script>
-        Fancybox.bind("[data-fancybox='gallery']", {
-          Toolbar: {
-            display: ["zoom", "close"], // Botones visibles en la barra
-          },
-          Thumbs: {
-            autoStart: true, // Miniaturas activadas automáticamente
-          },
-          animationEffect: "zoom", // Efecto al abrir/cerrar
-          video: {
-            autoStart: false, // No se reproduce automáticamente
-            controls: true, // Activa controles de reproducción
-          },
-        });
-      </script>
       <section id="amenities-services" class="py-5">
         <div class="container">
           <div class="row">
@@ -309,133 +310,15 @@
                 class="carousel slide"
                 data-bs-ride="carousel"
               >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#reviewCarousel"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="indicador"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#reviewCarousel"
-                    data-bs-slide-to="1"
-                    aria-label="indicador"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#reviewCarousel"
-                    data-bs-slide-to="2"
-                    aria-label="indicador"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#reviewCarousel"
-                    data-bs-slide-to="3"
-                    aria-label="indicador"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#reviewCarousel"
-                    data-bs-slide-to="4"
-                    aria-label="indicador"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="text-center">
-                      <img
-                        src="Reseña1_Santiago.png"
-                        class="reseña-imagen"
-                        alt="Persona 1"
-                        width="80"
-                        loading="lazy"
-                      />
-                      <h5>Santiago</h5>
-                      <p class="text-muted">
-                        "Muy bien ubicado, muy bonito el apartamento y muy buena
-                        la atención de los dueños"
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="text-center">
-                      <img
-                        src="Martin_Reseña2.png"
-                        class="reseña-imagen"
-                        alt="Persona 2"
-                        width="80"
-                        loading="lazy"
-                      />
-                      <h5>Martin David</h5>
-                      <p class="text-muted">
-                        "Esta muy bien ubicado, el personal del edificio y los
-                        host son muy amigables"
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="text-center">
-                      <img
-                        src="Hélder_reseña3.png"
-                        class="reseña-imagen"
-                        alt="Persona 3"
-                        width="80"
-                        loading="lazy"
-                      />
-                      <h5>Hélder</h5>
-                      <p class="text-muted">
-                        "Este lugar vale cada centavo en él, esta no fue mi
-                        primera vez aquí y tengo la sensación de que no será el
-                        último, siempre y cuando esté en el área de Santa
-                        Marta."
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="text-center">
-                      <img
-                        src="Monica_reseña4.png"
-                        class="reseña-imagen"
-                        alt="Persona 4"
-                        width="80"
-                        loading="lazy"
-                      />
-                      <h5>Monica Maria</h5>
-                      <p class="text-muted">"Maravillosa estadía"</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="text-center">
-                      <img
-                        src="Maria_reseña5.jpg"
-                        class="reseña-imagen"
-                        alt="Persona 5"
-                        width="80"
-                        loading="lazy"
-                      />
-                      <h5>Maria</h5>
-                      <p class="text-muted">
-                        "Nuestra estancia no podría ser más perfecta … Johana y
-                        Jairo fueron muy atentos y muy comunicativos y nos
-                        ayudaron a movernos"
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+                <div class="carousel-inner" id="carouselInner"></div>
                 <button
                   class="carousel-control-prev"
                   type="button"
                   data-bs-target="#reviewCarousel"
                   data-bs-slide="prev"
-                  aria-label="Ir al anterior"
                 >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
+                  <span class="carousel-control-prev-icon"></span>
                   <span class="visually-hidden">Anterior</span>
                 </button>
                 <button
@@ -443,12 +326,8 @@
                   type="button"
                   data-bs-target="#reviewCarousel"
                   data-bs-slide="next"
-                  aria-label="Ir al siguiente"
                 >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
+                  <span class="carousel-control-next-icon"></span>
                   <span class="visually-hidden">Siguiente</span>
                 </button>
               </div>
@@ -570,5 +449,7 @@
       defer
     ></script>
     <script src="script.js" defer></script>
+    <script src="testimonios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   </body>
 </html>

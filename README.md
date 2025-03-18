@@ -1,2 +1,0 @@
-# LandingPage
-landingPage de prueba

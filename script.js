@@ -115,11 +115,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Detener el video cuando se cierra el modal
-document
-  .getElementById("videoModal")
-  .addEventListener("hidden.bs.modal", function () {
-    let video = document.getElementById("videoFrame");
-    video.pause();
-    video.currentTime = 0;
-  });
+// // Detener el video cuando se cierra el modal
+// document
+//   .getElementById("videoModal")
+//   .addEventListener("hidden.bs.modal", function () {
+//     let video = document.getElementById("videoFrame");
+//     video.pause();
+//     video.currentTime = 0;
+//   });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   Fancybox.bind("[data-fancybox='gallery']", {
+//     Toolbar: {
+//       display: ["zoom", "close"],
+//     },
+//     Thumbs: {
+//       autoStart: true,
+//     },
+//     animationEffect: "zoom",
+//     video: {
+//       autoStart: false,
+//       controls: true,
+//     },
+//     caption: function (fancybox, carousel, slide) {
+//       return slide.caption || "";
+//     },
+//   });
+
+//   document.addEventListener("close.fancybox", function () {
+//     document.activeElement.blur(); // Quita el foco de cualquier elemento dentro del modal
+//   });
+// });
